@@ -1,0 +1,104 @@
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
+  color: var(--accent-text-color);
+}
+
+
+.menu-overlay & {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #fff;
+
+  padding: 48px 40px;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .menu-overlay.is-open & {
+transform: translateX(0);
+  }
+ 
+}
+
+.mobile-menu__list {  
+  margin-top: 0;
+  margin-bottom: auto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+
+
+
+
+.menu-tel-item {
+    margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.menu-mail-item {
+    margin-bottom: 64px;
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    
+        color: #757575;
+}
+
+.menu-socials-list {
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+}
+
+.menu-socials-item:not(:last-child) .menu-socials-link {
+display: flex;
+padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+   
+}
+
