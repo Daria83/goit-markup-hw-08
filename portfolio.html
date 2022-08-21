@@ -29,9 +29,15 @@
     <!--Header section-->
     <header class="header">
       <div class="container header__container">
-        <a class="logo logo__header link" href="./index.html"
-          ><span class="web">Web</span>Studio</a
+        <a class="logo logo__header link" href="./index.html">
+          <span class="web">Web</span>Studio</a
         >
+
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
 
         <!--Навігація на інші сторінки сайту-->
         <nav class="nav">
@@ -54,9 +60,9 @@
 
         <!--Контакти-->
         <ul class="header-contacts list">
-          <li>
+          <li class="header-contacts__item">
             <a
-              class="header-contacts__mail header-contacts__link link"
+              class="header-contacts__link link"
               href="mailto:info@devstudio.com"
             >
               <svg class="header-contacts__icon" width="16" height="12">
@@ -65,11 +71,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a
-              class="header-contacts__phone header-contacts__link link"
-              href="tel:+380961111111"
-            >
+          <li class="header-contacts__item">
+            <a class="header-contacts__link link" href="tel:+380961111111">
               <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#telephone"></use>
               </svg>
@@ -108,8 +111,18 @@
               <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
-                    src="./images/portfolio/img1.jpg"
+                    srcset="
+                      ./images/portfolio/img-1-354.jpg 354w,
+                      ./images/portfolio/img-1-370.jpg 370w,
+                      ./images/portfolio/img-1-450.jpg 450w,
+                      ./images/portfolio/img-1-708.jpg 708w,
+                      ./images/portfolio/img-1-740.jpg 740w,
+                      ./images/portfolio/img-1-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-1-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                     alt="Веб-сайт Технокряк"
+                    width="450"
                   />
                   <div class="overlay">
                     <p class="overlay-text">
@@ -129,7 +142,20 @@
             <li class="examples__item">
               <a class="example__link link" href="">
                 <div class="examples-overlay">
-                  <img src="./images/portfolio/img2.jpg" alt="Дизайн Постера" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img-2-354.jpg 354w,
+                      ./images/portfolio/img-2-370.jpg 370w,
+                      ./images/portfolio/img-2-450.jpg 450w,
+                      ./images/portfolio/img-2-708.jpg 708w,
+                      ./images/portfolio/img-2-740.jpg 740w,
+                      ./images/portfolio/img-2-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-2-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    alt="Дизайн Постера"
+                    width="450"
+                  />
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -152,8 +178,18 @@
               <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
-                    src="./images/portfolio/img3.jpg"
+                    srcset="
+                      ./images/portfolio/img-3-354.jpg 354w,
+                      ./images/portfolio/img-3-370.jpg 370w,
+                      ./images/portfolio/img-3-450.jpg 450w,
+                      ./images/portfolio/img-3-708.jpg 708w,
+                      ./images/portfolio/img-3-740.jpg 740w,
+                      ./images/portfolio/img-3-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-3-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                     alt="Приложение для ресторана"
+                    width="450"
                   />
                   <div class="overlay">
                     <p class="overlay-text">
@@ -176,8 +212,18 @@
               <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
-                    src="./images/portfolio/img4.jpg"
+                    srcset="
+                      ./images/portfolio/img-4-354.jpg 354w,
+                      ./images/portfolio/img-4-370.jpg 370w,
+                      ./images/portfolio/img-4-450.jpg 450w,
+                      ./images/portfolio/img-4-708.jpg 708w,
+                      ./images/portfolio/img-4-740.jpg 740w,
+                      ./images/portfolio/img-4-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-4-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                     alt="Проект маркетинга"
+                    width="450"
                   />
                   <div class="overlay">
                     <p class="overlay-text">
@@ -201,8 +247,18 @@
               <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
-                    src="./images/portfolio/img5.jpg"
+                    srcset="
+                      ./images/portfolio/img-5-354.jpg 354w,
+                      ./images/portfolio/img-5-370.jpg 370w,
+                      ./images/portfolio/img-5-450.jpg 450w,
+                      ./images/portfolio/img-5-708.jpg 708w,
+                      ./images/portfolio/img-5-740.jpg 740w,
+                      ./images/portfolio/img-5-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-5-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                     alt="Пример приложения"
+                    width="450"
                   />
                   <div class="overlay">
                     <p class="overlay-text">
@@ -225,7 +281,20 @@
             <li class="examples__item">
               <a class="example__link link" href="">
                 <div class="examples-overlay">
-                  <img src="./images/portfolio/img6.jpg" alt="Фото сайта" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img-6-354.jpg 354w,
+                      ./images/portfolio/img-6-370.jpg 370w,
+                      ./images/portfolio/img-6-450.jpg 450w,
+                      ./images/portfolio/img-6-708.jpg 708w,
+                      ./images/portfolio/img-6-740.jpg 740w,
+                      ./images/portfolio/img-6-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-6-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    alt="Фото сайта"
+                    width="450"
+                  />
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -247,7 +316,20 @@
             <li class="examples__item">
               <a class="example__link link" href="">
                 <div class="examples-overlay">
-                  <img src="./images/portfolio/img7.jpg" alt="Фото издания" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img-7-354.jpg 354w,
+                      ./images/portfolio/img-7-370.jpg 370w,
+                      ./images/portfolio/img-7-450.jpg 450w,
+                      ./images/portfolio/img-7-708.jpg 708w,
+                      ./images/portfolio/img-7-740.jpg 740w,
+                      ./images/portfolio/img-7-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-7-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    alt="Фото издания"
+                    width="450"
+                  />
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -270,8 +352,18 @@
               <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
-                    src="./images/portfolio/img8.jpg"
+                    srcset="
+                      ./images/portfolio/img-8-354.jpg 354w,
+                      ./images/portfolio/img-8-370.jpg 370w,
+                      ./images/portfolio/img-8-450.jpg 450w,
+                      ./images/portfolio/img-8-708.jpg 708w,
+                      ./images/portfolio/img-8-740.jpg 740w,
+                      ./images/portfolio/img-8-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-8-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                     alt="Проект маркетинга"
+                    width="450"
                   />
                   <div class="overlay">
                     <p class="overlay-text">
@@ -295,8 +387,18 @@
               <a class="link example__link" href="">
                 <div class="examples-overlay">
                   <img
-                    src="./images/portfolio/img9.jpg"
+                    srcset="
+                      ./images/portfolio/img-9-354.jpg 354w,
+                      ./images/portfolio/img-9-370.jpg 370w,
+                      ./images/portfolio/img-9-450.jpg 450w,
+                      ./images/portfolio/img-9-708.jpg 708w,
+                      ./images/portfolio/img-9-740.jpg 740w,
+                      ./images/portfolio/img-9-900.jpg 900w
+                    "
+                    src="./images/portfolio/img-9-450.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
                     alt="Фото приложения"
+                    width="450"
                   />
                   <div class="overlay">
                     <p class="overlay-text">
@@ -416,5 +518,59 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile-menu -->
+    <div class="menu-overlay" data-menu>
+      <div class="mobile-menu">
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="menu-close-item" width="40" height="40">
+            <use href="./images/icons.svg#close_menu"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--current link"
+              href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Контакти</a>
+          </li>
+        </ul>
+        <ul class="menu-contacts list">
+          <li class="menu-tel-item">
+            <a class="menu-tel-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-mail-item">
+            <a class="menu-mail-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-socials-list list">
+          <li class="menu-socials-item">
+            <a class="menu-socials-link link" href="">Instagram</a>
+          </li>
+          <li class="menu-socials-item">
+            <a class="menu-socials-link link" href="">Twitter</a>
+          </li>
+          <li class="menu-socials-item">
+            <a class="menu-socials-link link" href="">Facebook</a>
+          </li>
+          <li class="menu-socials-item">
+            <a class="menu-socials-link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
