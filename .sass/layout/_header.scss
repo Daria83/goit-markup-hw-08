@@ -69,7 +69,7 @@
   &__item {
     color: var(--second-text-color);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.02em;
 
@@ -80,6 +80,7 @@
 
     @media screen and (min-width: 1200px) {
       padding-bottom: 0;
+      font-size: 14px;
     }
   }
 
@@ -107,6 +108,7 @@
   margin-right: 10px;
   fill: currentColor;
 
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,4 +118,21 @@
   &:focus {
     color: var(--accent-text-color);
   }
+  
+}
+
+.header-contacts__icon-mail {
+
+  @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  
+}
+
+.header-contacts__icon-tel {
+  @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
 }

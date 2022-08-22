@@ -1,41 +1,50 @@
 .footer-subscribe {
-    text-align: center;
+  text-align: center;
 
-    @media screen and (min-width: 1200px) {
-            text-align: left;
-        }
-    &__title {
-            margin-bottom: 20px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.1;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #ffffff;
-        }
+  @media screen and (min-width: 468px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    width: 570px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
-
-
 
 .footer-form {
-    
-    align-items: center;
+  align-items: center;
 
-    &__input {            
-            width: 358px;
-            height: 50;
-            padding: 15px 0 15px 16px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            border-radius: 4px;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            background-color: transparent;
-            color: rgba(255, 255, 255, 0.6);    
-            
-            
-        }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__input {
+    max-width: 358px;
+    width: 100%;
+    height: 50px;
+    // padding: 15px 0 15px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
+  }
 }
-
